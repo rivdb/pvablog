@@ -12,6 +12,6 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   prefetch: true,
   site: 'https://rivdb.github.io'
-  base: 'pvablog'
+  base: '/pvablog'
   integrations: [mdx(), sitemap(), tailwind(), solidJs(), metaTags(), robotsTxt()]
 });
