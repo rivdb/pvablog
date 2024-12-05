@@ -11,10 +11,10 @@ const isAnchorLink = href && href.toString().startsWith('#');
 
 {
     (isInternalLink || isAnchorLink) ?
-    <a href={href} {...rest}>
+    <a href={`/pvablog/${href}`} {...rest}>
         <slot/>
     </a> :
-    <a target="_blank" rel="noopener noreferrer" href={href} {...rest}>
+    <a target="_blank" rel="noopener noreferrer" href={`/pvablog/${href}`} {...rest}>
         <slot/>
     </a>
 }
