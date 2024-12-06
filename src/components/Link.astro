@@ -14,7 +14,7 @@ const isAnchorLink = href && href.toString().startsWith('#');
     <a href={href} {...rest}>
         <slot/>
     </a> :
-    <a target="_blank" rel="noopener noreferrer" href={`/pvablog${href}`} {...rest}>
+    <a target="_blank" rel="noopener noreferrer" href={`/rivdb.github.io${href}`} {...rest}>
         <slot/>
     </a>
 }
